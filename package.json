@@ -1,0 +1,14 @@
+{
+  "name": "filf",
+  "version": "1.0.0",
+  "description": "A blog of food id like to... you know...",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/o dist/css/ —recursive"
+  },
+  "author": "Russ Perry",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
