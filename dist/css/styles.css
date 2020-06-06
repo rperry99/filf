@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif; }
+
+body {
+  overflow-x: hidden; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative; }
+  nav #logo {
+    color: #dd6031;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold; }
+  nav #hamburger {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    nav #hamburger .bar {
+      width: 100%;
+      background: #dd6031;
+      height: 5px;
+      border-radius: 5px; }
+    nav #hamburger:hover {
+      cursor: pointer; }
+  nav #navContent {
+    background: #f1f6ef;
+    padding: 1rem;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    transition: opacity 300ms ease; }
+    nav #navContent a {
+      color: #dd6031;
+      text-decoration: none;
+      font-size: 1.5rem; }
+      nav #navContent a:hover {
+        color: #eba489;
+        cursor: pointer; }
+    nav #navContent .close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 1rem;
+      font-size: 2rem;
+      font-weight: bold; }
+    nav #navContent .socials {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 75%; }
+
+.hide {
+  opacity: 0;
+  right: -9999px;
+  top: -9999px; }
+
+.show {
+  right: 0;
+  top: 0;
+  opacity: 1; }
+
+@media (min-width: 767px) {
+  nav {
+    align-items: flex-end; }
+  #navContent {
+    right: 0 !important;
+    top: 0 !important;
+    opacity: 1 !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    background: none !important;
+    width: max-content !important; }
+    #navContent a {
+      margin-right: 20px; }
+  #hamburger,
+  .close {
+    display: none !important; }
+  .socials {
+    width: max-content !important; } }
