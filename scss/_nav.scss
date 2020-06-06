@@ -12,7 +12,7 @@ nav {
     font-size: 1.2rem;
     font-weight: bold;
   }
-  .hamburger {
+  #hamburger {
     width: $hamburger-size;
     height: $hamburger-size;
     display: flex;
@@ -30,7 +30,6 @@ nav {
     }
   }
   #navContent {
-    display: none;
     background: $lightest-accent;
     padding: 1rem;
     height: 100vh;
@@ -40,13 +39,15 @@ nav {
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
-    right: 0;
-    top: 0;
-    animation: fadeNav 0.5s ease forwards;
+    transition: opacity 300ms ease;
     a {
       color: $primary;
       text-decoration: none;
       font-size: 1.5rem;
+      &:hover {
+        color: $lighter-primary;
+        cursor: pointer;
+      }
     }
     .close {
       position: absolute;
@@ -55,28 +56,23 @@ nav {
       margin: 1rem;
       font-size: 2rem;
       font-weight: bold;
-      &:hover {
-        color: $lighter-primary;
-        cursor: pointer;
-      }
+    }
+    .socials {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 75%;
     }
   }
 }
 
-.fadeAnimForward {
-  animation: fadeNav 0.5s ease forwards;
+.hide {
+  opacity: 0;
+  right: -9999px;
+  top: -9999px;
 }
-.fadeAnimReverse {
-  animation: fadeNav 0.5s ease reverse;
-}
-
-@keyframes fadeNav {
-  from {
-    opacity: 1;
-    display: block;
-  }
-  to {
-    opacity: 0;
-    display: none;
-  }
+.show {
+  right: 0;
+  top: 0;
+  opacity: 1;
 }
