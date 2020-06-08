@@ -77,18 +77,18 @@ nav {
 @media (min-width: 767px) {
   nav {
     align-items: flex-end; }
-  #navContent {
-    right: 0 !important;
-    top: 0 !important;
-    opacity: 1 !important;
-    flex-direction: row !important;
-    justify-content: flex-end !important;
-    background: none !important;
-    width: max-content !important; }
-    #navContent a {
-      margin-right: 20px; }
-  #hamburger,
-  .close {
-    display: none !important; }
-  .socials {
-    width: max-content !important; } }
+    nav #navContent {
+      right: 0;
+      top: 0;
+      opacity: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+      background: none;
+      width: max-content; }
+      nav #navContent a {
+        margin-right: 20px; }
+    nav #hamburger,
+    nav .close {
+      display: none; }
+    nav .socials {
+      width: max-content; } }
