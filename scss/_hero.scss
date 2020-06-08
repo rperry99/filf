@@ -1,0 +1,22 @@
+header {
+  height: 50vh;
+  width: 100vw;
+  background: $accent;
+  overflow: hidden;
+  position: relative;
+  img {
+    object-fit: cover;
+    opacity: 0.4;
+    width: 100%;
+  }
+  .heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+}
