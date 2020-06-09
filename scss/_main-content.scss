@@ -1,0 +1,81 @@
+#mainContent {
+  width: 100%;
+  padding: 1rem;
+  .tagline {
+    color: $primary;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+  }
+  .recipe {
+    .recipeHeader {
+      img {
+        width: 75%;
+        height: auto;
+        margin: 1rem auto;
+        display: block;
+      }
+      .recipeGroup {
+        .headline {
+          margin-bottom: 1rem;
+        }
+        .recipeInfo {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-bottom: 1rem;
+          border: solid 1px $lighter-primary;
+          p {
+            border-top: solid 1px $lightest-primary;
+            border-left: solid 1px $lightest-primary;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+    .instructions {
+      .ingredients {
+        ul {
+          width: 85%;
+          margin: 0.5rem auto 1rem;
+          list-style: none;
+          li {
+            margin: 0.5rem 0;
+            &:before {
+              content: "\2022";
+              color: $accent;
+              font-weight: bold;
+              display: inline-block;
+              width: 1rem;
+              margin-left: -1rem;
+            }
+          }
+        }
+      }
+      .directions {
+        ol {
+          list-style: none;
+          counter-reset: my-counter;
+          width: 85%;
+          margin: 0.5rem auto 1rem;
+          li {
+            counter-increment: my-counter;
+            margin: 1rem 0;
+            &:before {
+              content: counter(my-counter);
+              color: $primary;
+              background: $lighter-accent;
+              text-align: center;
+              display: inline-block;
+              line-height: 1.5rem;
+              border-radius: 50%;
+              width: 1.5rem;
+              height: 1.5rem;
+              font-weight: bold;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

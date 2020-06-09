@@ -5,3 +5,12 @@ $lightest-primary: lighten($primary, 40%);
 $accent: #7fb069;
 $lighter-accent: lighten($accent, 20%);
 $lightest-accent: lighten($accent, 40%);
+
+.clearfix {
+  overflow: auto;
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
