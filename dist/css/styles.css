@@ -115,10 +115,24 @@ header {
     margin: 1rem auto;
     display: block; }
   #mainContent .recipe .recipeHeader .recipeGroup .headline {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-size: 1.25rem; }
+  #mainContent .recipe .recipeHeader .recipeGroup .share {
+    background: #fae7e0;
+    padding: 1rem 2rem;
+    width: 75%;
+    margin: 1rem auto 2rem; }
+    #mainContent .recipe .recipeHeader .recipeGroup .share .links {
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 1rem; }
   #mainContent .recipe .recipeHeader .recipeGroup .recipeInfo {
     display: grid;
+    width: 75%;
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
     margin-bottom: 1rem;
     border: solid 1px #eba489; }
     #mainContent .recipe .recipeHeader .recipeGroup .recipeInfo p {
