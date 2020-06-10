@@ -185,10 +185,13 @@ header {
       align-items: center;
       margin: 2rem 0; }
       #mainContent .recipe .recipeHeader img {
-        width: 48%;
-        margin: unset; }
+        width: 35%; }
       #mainContent .recipe .recipeHeader .recipeGroup {
-        width: 48%; }
+        width: 48%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column; }
     #mainContent .recipe .instructions {
       display: flex;
       justify-content: space-between;
