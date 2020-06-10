@@ -18,10 +18,26 @@
       .recipeGroup {
         .headline {
           margin-bottom: 1rem;
+          font-size: 1.25rem;
+        }
+        .share {
+          background: $lightest-primary;
+          padding: 1rem 2rem;
+          width: 75%;
+          margin: 1rem auto 2rem;
+          .links {
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 1rem;
+          }
         }
         .recipeInfo {
           display: grid;
+          width: 75%;
           grid-template-columns: 1fr 1fr;
+          margin: 0 auto;
           margin-bottom: 1rem;
           border: solid 1px $lighter-primary;
           p {

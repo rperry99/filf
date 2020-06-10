@@ -31,11 +31,14 @@
         align-items: center;
         margin: 2rem 0;
         img {
-          width: 48%;
-          margin: unset;
+          width: 35%;
         }
         .recipeGroup {
           width: 48%;
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+          flex-direction: column;
         }
       }
       .instructions {
