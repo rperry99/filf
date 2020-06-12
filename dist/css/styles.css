@@ -217,6 +217,25 @@ header {
         #related .cards .card:hover .cardImg .overlay {
           left: 0; }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  background: #dd6031;
+  padding: 1rem 2rem; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+    footer a:hover {
+      color: #b8d3ac; }
+  footer .social {
+    margin-bottom: 0.5rem; }
+    footer .social a {
+      font-size: 1.5rem; }
+      footer .social a:not(:last-child) {
+        margin-right: 1rem; }
+
 @media (min-width: 767px) {
   nav {
     align-items: flex-end; }
@@ -287,7 +306,11 @@ header {
         font-size: 0.9rem;
         font-style: italic; }
       #related .cards .card:hover {
-        cursor: pointer; } }
+        cursor: pointer; }
+  footer {
+    flex-direction: row; }
+    footer .social {
+      margin: 0; } }
 
 @media (min-width: 1200px) {
   #related .cards .card {
