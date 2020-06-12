@@ -65,4 +65,42 @@
       }
     }
   }
+
+  #related {
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .card {
+        width: 40%;
+        .cardImg {
+          width: 100%;
+          height: 300px;
+          background-size: cover;
+          background-position: center;
+        }
+        h4 {
+          margin: 0.5rem 0;
+        }
+        .shortDescr {
+          font-size: 0.9rem;
+          font-style: italic;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #related {
+    .cards {
+      .card {
+        width: 20%;
+      }
+    }
+  }
 }

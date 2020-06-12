@@ -173,6 +173,31 @@ header {
         font-weight: bold;
         margin-right: 0.5rem; }
 
+#related {
+  background: #f1f6ef;
+  padding: 1rem 0; }
+  #related h3 {
+    margin-left: 1rem; }
+  #related .cards {
+    margin: 1rem 0; }
+    #related .cards .card {
+      background: white;
+      width: 85%;
+      margin: 2rem auto;
+      padding: 1rem; }
+      #related .cards .card .cardImg {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center; }
+      #related .cards .card h4 {
+        margin: 0.5rem 0; }
+      #related .cards .card .shortDescr {
+        font-size: 0.9rem;
+        font-style: italic; }
+      #related .cards .card:hover {
+        cursor: pointer; }
+
 @media (min-width: 767px) {
   nav {
     align-items: flex-end; }
@@ -224,4 +249,27 @@ header {
         z-index: 50; }
       #mainContent .recipe .instructions .ingredients,
       #mainContent .recipe .instructions .directions {
-        width: 48%; } }
+        width: 48%; }
+  #related .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    #related .cards .card {
+      width: 40%; }
+      #related .cards .card .cardImg {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center; }
+      #related .cards .card h4 {
+        margin: 0.5rem 0; }
+      #related .cards .card .shortDescr {
+        font-size: 0.9rem;
+        font-style: italic; }
+      #related .cards .card:hover {
+        cursor: pointer; } }
+
+@media (min-width: 1200px) {
+  #related .cards .card {
+    width: 20%; } }
