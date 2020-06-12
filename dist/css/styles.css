@@ -189,7 +189,24 @@ header {
         width: 100%;
         height: 200px;
         background-size: cover;
-        background-position: center; }
+        background-position: center;
+        position: relative;
+        overflow: hidden; }
+        #related .cards .card .cardImg .overlay {
+          position: absolute;
+          top: 0;
+          left: -100%;
+          height: 100%;
+          width: 100%;
+          background: rgba(127, 176, 105, 0.8);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          font-weight: bold;
+          transition: left 0.4s ease; }
       #related .cards .card h4 {
         margin: 0.5rem 0; }
       #related .cards .card .shortDescr {
@@ -197,6 +214,8 @@ header {
         font-style: italic; }
       #related .cards .card:hover {
         cursor: pointer; }
+        #related .cards .card:hover .cardImg .overlay {
+          left: 0; }
 
 @media (min-width: 767px) {
   nav {
