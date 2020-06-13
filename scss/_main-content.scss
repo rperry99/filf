@@ -19,18 +19,29 @@
         .headline {
           margin-bottom: 1rem;
           font-size: 1.25rem;
+          color: $black;
         }
         .share {
-          background: $lightest-primary;
+          background: $primary;
           padding: 1rem 2rem;
           width: 75%;
           margin: 1rem auto 2rem;
+          h3 {
+            color: white;
+          }
           .links {
             font-size: 2rem;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             margin-top: 1rem;
+            a {
+              color: white;
+              transition: color 0.4s ease;
+              &:hover {
+                color: $lighter-primary;
+              }
+            }
           }
         }
         .recipeInfo {
@@ -40,15 +51,18 @@
           margin: 0 auto;
           margin-bottom: 1rem;
           border: solid 1px $lighter-primary;
+          color: $black;
           p {
             border-top: solid 1px $lightest-primary;
             border-left: solid 1px $lightest-primary;
             padding: 1rem;
+            color: $black;
           }
         }
       }
     }
     .instructions {
+      color: $black;
       .ingredients {
         ul {
           width: 85%;
@@ -78,7 +92,7 @@
             margin: 1rem 0;
             &:before {
               content: counter(my-counter);
-              color: $primary;
+              color: white;
               background: $lighter-accent;
               text-align: center;
               display: inline-block;
