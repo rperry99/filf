@@ -41,7 +41,7 @@ nav {
     nav #hamburger:hover {
       cursor: pointer; }
   nav #navContent {
-    background: #f1f6ef;
+    background: white;
     padding: 1rem;
     height: 100vh;
     width: 50vw;
@@ -84,7 +84,7 @@ nav {
 header {
   height: 50vh;
   width: 100vw;
-  background: #7fb069;
+  background: #81f499;
   overflow: hidden;
   position: relative; }
   header img {
@@ -116,68 +116,81 @@ header {
     display: block; }
   #mainContent .recipe .recipeHeader .recipeGroup .headline {
     margin-bottom: 1rem;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    color: #41463d; }
   #mainContent .recipe .recipeHeader .recipeGroup .share {
-    background: #fae7e0;
+    background: #dd6031;
     padding: 1rem 2rem;
     width: 75%;
     margin: 1rem auto 2rem; }
+    #mainContent .recipe .recipeHeader .recipeGroup .share h3 {
+      color: white; }
     #mainContent .recipe .recipeHeader .recipeGroup .share .links {
       font-size: 2rem;
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       margin-top: 1rem; }
+      #mainContent .recipe .recipeHeader .recipeGroup .share .links a {
+        color: white;
+        transition: color 0.4s ease; }
+        #mainContent .recipe .recipeHeader .recipeGroup .share .links a:hover {
+          color: #eba489; }
   #mainContent .recipe .recipeHeader .recipeGroup .recipeInfo {
     display: grid;
     width: 75%;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     margin-bottom: 1rem;
-    border: solid 1px #eba489; }
+    border: solid 1px #eba489;
+    color: #41463d; }
     #mainContent .recipe .recipeHeader .recipeGroup .recipeInfo p {
       border-top: solid 1px #fae7e0;
       border-left: solid 1px #fae7e0;
-      padding: 1rem; }
-  #mainContent .recipe .instructions .ingredients ul {
-    width: 85%;
-    margin: 0.5rem auto 1rem;
-    list-style: none; }
-    #mainContent .recipe .instructions .ingredients ul li {
-      margin: 0.5rem 0; }
-      #mainContent .recipe .instructions .ingredients ul li:before {
-        content: "\2022";
-        color: #7fb069;
-        font-weight: bold;
-        display: inline-block;
-        width: 1rem;
-        margin-left: -1rem; }
-  #mainContent .recipe .instructions .directions ol {
-    list-style: none;
-    counter-reset: my-counter;
-    width: 85%;
-    margin: 0.5rem auto 1rem; }
-    #mainContent .recipe .instructions .directions ol li {
-      counter-increment: my-counter;
-      margin: 1rem 0; }
-      #mainContent .recipe .instructions .directions ol li:before {
-        content: counter(my-counter);
-        color: #dd6031;
-        background: #b8d3ac;
-        text-align: center;
-        display: inline-block;
-        line-height: 1.5rem;
-        border-radius: 50%;
-        width: 1.5rem;
-        height: 1.5rem;
-        font-weight: bold;
-        margin-right: 0.5rem; }
+      padding: 1rem;
+      color: #41463d; }
+  #mainContent .recipe .instructions {
+    color: #41463d; }
+    #mainContent .recipe .instructions .ingredients ul {
+      width: 85%;
+      margin: 0.5rem auto 1rem;
+      list-style: none; }
+      #mainContent .recipe .instructions .ingredients ul li {
+        margin: 0.5rem 0; }
+        #mainContent .recipe .instructions .ingredients ul li:before {
+          content: "\2022";
+          color: #81f499;
+          font-weight: bold;
+          display: inline-block;
+          width: 1rem;
+          margin-left: -1rem; }
+    #mainContent .recipe .instructions .directions ol {
+      list-style: none;
+      counter-reset: my-counter;
+      width: 85%;
+      margin: 0.5rem auto 1rem; }
+      #mainContent .recipe .instructions .directions ol li {
+        counter-increment: my-counter;
+        margin: 1rem 0; }
+        #mainContent .recipe .instructions .directions ol li:before {
+          content: counter(my-counter);
+          color: white;
+          background: #dffce5;
+          text-align: center;
+          display: inline-block;
+          line-height: 1.5rem;
+          border-radius: 50%;
+          width: 1.5rem;
+          height: 1.5rem;
+          font-weight: bold;
+          margin-right: 0.5rem; }
 
 #related {
-  background: #f1f6ef;
-  padding: 1rem 0; }
+  background: #eee;
+  padding: 2rem 0; }
   #related h3 {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    color: #41463d; }
   #related .cards {
     margin: 1rem 0; }
     #related .cards .card {
@@ -198,8 +211,8 @@ header {
           left: -100%;
           height: 100%;
           width: 100%;
-          background: rgba(127, 176, 105, 0.8);
-          color: white;
+          background: rgba(129, 244, 153, 0.8);
+          color: #41463d;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -208,10 +221,12 @@ header {
           font-weight: bold;
           transition: left 0.4s ease; }
       #related .cards .card h4 {
-        margin: 0.5rem 0; }
+        margin: 0.5rem 0;
+        color: #41463d; }
       #related .cards .card .shortDescr {
         font-size: 0.9rem;
-        font-style: italic; }
+        font-style: italic;
+        color: #41463d; }
       #related .cards .card:hover {
         cursor: pointer; }
         #related .cards .card:hover .cardImg .overlay {
@@ -228,7 +243,7 @@ footer {
     color: white;
     text-decoration: none; }
     footer a:hover {
-      color: #b8d3ac; }
+      color: #eba489; }
   footer .social {
     margin-bottom: 0.5rem; }
     footer .social a {
@@ -274,11 +289,11 @@ footer {
       justify-content: space-between;
       align-items: flex-start;
       position: relative;
-      border-top: solid 2px #7fb069;
+      border-top: solid 2px #81f499;
       padding-top: 2rem; }
       #mainContent .recipe .instructions:after {
         height: 100%;
-        background: #7fb069;
+        background: #81f499;
         width: 2px;
         content: "";
         position: absolute;
