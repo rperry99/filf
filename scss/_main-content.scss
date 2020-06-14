@@ -24,7 +24,7 @@
         .share {
           background: $primary;
           padding: 1rem 2rem;
-          width: 75%;
+          width: 90%;
           margin: 1rem auto 2rem;
           h3 {
             color: white;
@@ -46,7 +46,7 @@
         }
         .recipeInfo {
           display: grid;
-          width: 75%;
+          width: 90%;
           grid-template-columns: 1fr 1fr;
           margin: 0 auto;
           margin-bottom: 1rem;
@@ -72,7 +72,7 @@
             margin: 0.5rem 0;
             &:before {
               content: "\2022";
-              color: $accent;
+              color: $lighter-primary;
               font-weight: bold;
               display: inline-block;
               width: 1rem;
@@ -93,7 +93,7 @@
             &:before {
               content: counter(my-counter);
               color: white;
-              background: $lighter-accent;
+              background: $lighter-primary;
               text-align: center;
               display: inline-block;
               line-height: 1.5rem;

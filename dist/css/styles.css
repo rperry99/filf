@@ -6,6 +6,9 @@
     clear: both;
     display: table; }
 
+body {
+  overflow-x: hidden; }
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +44,7 @@ nav {
     nav #hamburger:hover {
       cursor: pointer; }
   nav #navContent {
-    background: white;
+    background: #eee;
     padding: 1rem;
     height: 100vh;
     width: 50vw;
@@ -50,7 +53,8 @@ nav {
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
-    transition: opacity 300ms ease; }
+    transition: opacity 300ms ease;
+    z-index: 50000; }
     nav #navContent a {
       color: #dd6031;
       text-decoration: none;
@@ -121,7 +125,7 @@ header {
   #mainContent .recipe .recipeHeader .recipeGroup .share {
     background: #dd6031;
     padding: 1rem 2rem;
-    width: 75%;
+    width: 90%;
     margin: 1rem auto 2rem; }
     #mainContent .recipe .recipeHeader .recipeGroup .share h3 {
       color: white; }
@@ -138,7 +142,7 @@ header {
           color: #eba489; }
   #mainContent .recipe .recipeHeader .recipeGroup .recipeInfo {
     display: grid;
-    width: 75%;
+    width: 90%;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -159,7 +163,7 @@ header {
         margin: 0.5rem 0; }
         #mainContent .recipe .instructions .ingredients ul li:before {
           content: "\2022";
-          color: #81f499;
+          color: #eba489;
           font-weight: bold;
           display: inline-block;
           width: 1rem;
@@ -175,7 +179,7 @@ header {
         #mainContent .recipe .instructions .directions ol li:before {
           content: counter(my-counter);
           color: white;
-          background: #dffce5;
+          background: #eba489;
           text-align: center;
           display: inline-block;
           line-height: 1.5rem;
@@ -289,12 +293,12 @@ footer {
       justify-content: space-between;
       align-items: flex-start;
       position: relative;
-      border-top: solid 2px #81f499;
+      border-top: solid 2px #eba489;
       padding-top: 2rem; }
       #mainContent .recipe .instructions:after {
         height: 100%;
-        background: #81f499;
-        width: 2px;
+        background: #eba489;
+        width: 3px;
         content: "";
         position: absolute;
         left: 50%;
